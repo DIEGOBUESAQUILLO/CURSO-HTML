@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="animation" width="200"style="border: 1px solid;">
+
+
+
+
+    </canvas>
+    <script>
+        var canva=document.getElementById("animation");
+        var ctx= canva.getContext("2d");
+           
+
+        var posx =0;
+        var posy=0;
+        animar();
+
+    
+       fuction dibujarCuadro(x,y){
+         ctx.fillStyle = "#ff0000";
+         ctx.fillRect("0.0.30.30")
+
+       }
+
+      fuction animar(){
+        ctx.clearRect(0,0,canvas.width,height);
+        dibujarCuadro(posx,posy);
+        if (posx  canvas.width);
+             requestAnimationFrame(animar);
+      }
+
+       
+    </script>
+
+
+
+
+
+    
+</body>
+</html>
